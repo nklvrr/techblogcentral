@@ -1,0 +1,80 @@
+:root {
+  --dark: #17252A;
+  --teal: #2B7A78;
+  --aqua: #3AAFA9;
+  --pale: #DEF2F1;
+  --white: #FEFFFF;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--dark);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: var(--dark) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler {
+  border-color: var(--aqua);
+}
+
+.navbar-toggler-icon {
+  background-color: var(--aqua);
+}
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(to right, var(--teal), var(--aqua));
+  color: var(--white);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  color: var(--teal);
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+.btn-teal {
+  background-color: var(--teal);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-teal:hover {
+  background-color: var(--aqua);
+  color: var(--dark);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bg-light {
+  background-color: var(--pale) !important;
+  padding: 50px 0;
+}
+
+.bg-teal {
+  background-color: var(--teal);
+  padding: 50px 0;
+  color: var(--white);
+}
+
+.card-img-top {
+  height: 300px; /* Or whatever height looks good */
+  object-fit: cover;
+}
